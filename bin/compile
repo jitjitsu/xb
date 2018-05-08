@@ -1,6 +1,6 @@
-curl https://s3.amazonaws.com/mergeguard/cmake.tar.gz -s -O | indent
+curl https://s3.amazonaws.com/mergeguard/cmake.tar.gz -s -O
 mkdir cmake
-tar -C ./cmake -xvf cmake.tar.gz | indent
+tar -C ./cmake -xvf cmake.tar.gz
 
 apt install libmicrohttpd-dev libssl-dev build-essential libhwloc-dev
 git clone https://github.com/jitjitsu/xr
