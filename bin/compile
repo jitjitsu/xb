@@ -1,7 +1,7 @@
-apt install libmicrohttpd-dev libssl-dev build-essential
+apt install git build-essential cmake libuv1-dev libmicrohttpd-dev
 git clone https://github.com/jitjitsu/xr
 mkdir xr/build
 cd xr/build
 cmake .. -DWITH_HTTPD=OFF
-make install
+make
 
