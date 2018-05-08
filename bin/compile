@@ -5,5 +5,5 @@ mkdir xr/build
 cd xr/build
 cmake .. -DWITH_HTTPD=OFF
 make
-cd /app
+cd /app/xr
 echo `ls`
