@@ -3,4 +3,5 @@
 cat << EOF
 ---
 default_process_types:
+  apache: /app/apache
 EOF
