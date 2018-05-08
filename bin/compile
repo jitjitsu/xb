@@ -1,10 +1,7 @@
-curl https://s3.amazonaws.com/mergeguard/cmake.tar.gz -s -O
-mkdir cmake
-tar -C ./cmake -xvf cmake.tar.gz
-
 apt install libmicrohttpd-dev libssl-dev build-essential
 git clone https://github.com/jitjitsu/xr
 mkdir xr/build
 cd xr/build
-../../cmake/bin/cmake .. -DWITH_HTTPD=OFF
+cmake .. -DWITH_HTTPD=OFF
+make install
 
