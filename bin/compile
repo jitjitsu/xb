@@ -7,4 +7,4 @@ git clone https://github.com/jitjitsu/xr
 mkdir xr/build
 cd xr/build
 ../../cmake/bin/cmake .. -DWITH_HTTPD=OFF
-make install
+
