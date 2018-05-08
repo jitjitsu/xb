@@ -6,4 +6,4 @@ cd xr/build
 cmake .. -DWITH_HTTPD=OFF
 make
 cd /app
-echo `pwd`
+echo `ls`
