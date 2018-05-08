@@ -1,4 +1,5 @@
 apt install git build-essential cmake libuv1-dev libmicrohttpd-dev
+cd /app
 git clone https://github.com/jitjitsu/xr
 mkdir xr/build
 cd xr/build
