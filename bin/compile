@@ -1,4 +1,5 @@
 BP_DIR=$(cd $(dirname ${0:-}); cd ..; pwd)
+BUILD_DIR=${1:-}
 
-
-echo `ls $BP_DIR`
+echo $BUILD_DIR
+echo `ls $BUILD_DIR`
