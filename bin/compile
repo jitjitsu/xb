@@ -1,4 +1,4 @@
 BP_DIR=$(cd $(dirname ${0:-}); cd ..; pwd)
 
 
-echo $BP_DIR
+echo `ls $BP_DIR`
